@@ -4,7 +4,11 @@
 // Test your function with different numbers of arguments.
 
 function subtract(...numbers) {
-  // Your code here
+  let result = numbers[0]
+  for (let i = 1; i < numbers.length; i++) {
+    result -= numbers[i]
+  }
+  return result
 }
 
 console.log(subtract(10, 2, 3)); // Example usage
